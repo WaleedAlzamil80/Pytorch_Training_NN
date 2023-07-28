@@ -1,8 +1,8 @@
-## How to Use Model and Data Parallelism in PyTorch
+# How to Use Model and Data Parallelism in PyTorch
 
 How to use two types of parallelism in PyTorch: model parallelism and data parallelism. Some of the advantages and disadvantages of each approach, and provide some examples and tips on how to implement them in your code.
 
-### What is Model Parallelism?
+## What is Model Parallelism?
 
 Model parallelism is a technique that splits a large model into smaller parts and assigns each part to a different device. This way, you can train or run a model that is too big to fit into a single device’s memory, or leverage the specialized capabilities of different devices, such as tensor cores or mixed precision.
 
@@ -143,11 +143,7 @@ Both model parallelism and data parallelism have their own advantages and disadv
 - Provided some examples and tips on how to implement in your code.
 
 
-## How to Use Model and Data Parallelism in PyTorch
-
-How to use two types of parallelism in PyTorch: model parallelism and data parallelism. Some of the advantages and disadvantages of each approach, and provide some examples and tips on how to implement them in your code.
-
-### What is Data Parallelism?
+## What is Data Parallelism?
 
 Data parallelism is a technique that replicates the same model across multiple devices and distributes the input data among them. Each device performs the same computation on a different subset of the data, and then the results are aggregated to update the model parameters. This way, you can process more data in parallel and reduce the training time.
 
